@@ -1,0 +1,41 @@
+.weather{
+    
+    @apply flex flex-col items-center h-screen my-5;
+
+    &__title{
+        @apply my-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl text-teal-500;
+    }
+}
+
+.weather-search-form{
+    @apply w-full max-w-sm my-9;
+
+    &__search-form-container {
+        @apply flex items-center border-b border-teal-500 py-2;
+    }
+
+    &__input{
+        @apply appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 font-medium leading-tight focus:outline-none;
+    }
+
+    &__btn{
+        @apply flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm font-medium border-4 text-white py-1 px-2 rounded;
+    }
+}
+
+.weather-show{
+    @apply flex flex-col items-center pb-10;
+
+    &__img{
+        @apply w-24 h-24 mb-3 rounded-full shadow-lg;
+    }
+
+    &__location{
+        @apply mb-1 text-xl font-medium text-gray-900 dark:text-white;
+    }
+
+    &__weather{
+        @apply text-sm text-gray-500 dark:text-gray-400;
+    }
+
+}
